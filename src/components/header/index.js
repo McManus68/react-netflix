@@ -45,7 +45,11 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
   )
 }
 
-Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps }) {
+Header.Search = function HeaderSearch({
+  searchTerm,
+  setSearchTerm,
+  ...restProps
+}) {
   const [searchActive, setSearchActive] = useState(false)
 
   return (
@@ -91,7 +95,10 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
   return <PlayButton {...restProps}>{children}</PlayButton>
 }
 
-Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }) {
+Header.FeatureCallOut = function HeaderFeatureCallOut({
+  children,
+  ...restProps
+}) {
   return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>
 }
 
